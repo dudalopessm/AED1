@@ -37,8 +37,10 @@ int main () {
     double l[3];
     if (strcmp(pergunta,"S") == 0 || strcmp(pergunta,"s") == 0 || strcmp(pergunta,"sim") == 0 || strcmp(pergunta,"Sim") == 0 || strcmp(pergunta,"SIM") == 0|| strcmp(pergunta,"SIm") == 0 || strcmp(pergunta,"SiM") == 0) {
         printf("\n\nDigite a medida da base: ");
+        setbuf (stdin, NULL);
         scanf("%lf", &b);
         printf("\n\nDigite a medida da altura: ");
+        setbuf (stdin, NULL);
         scanf("%lf", &h);
         while (b <=0 || h<= 0) {
             printf("\n\nDados invalidos, portanto, encerrando programa...");
@@ -51,6 +53,7 @@ int main () {
     } else {
         printf("\n\nDigite a medida dos lados abaixo, sendo o primeiro o maior lado.");
         for (int i = 0; i < 3; i++) {
+            setbuf (stdin, NULL);
             printf("\n\nDigite a medida do %d lado: ", i + 1);
             scanf("%lf", &l[i]);
         }

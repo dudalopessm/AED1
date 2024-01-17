@@ -4,10 +4,13 @@ int main () {
     float n1, n2, res;
     char op;
     printf("\n\nDigite um operador aritmetico: ");
+    setbuf (stdin, NULL);
     scanf("%c", &op);
     printf("\n\nAgora, digite o primeiro numero da operacao desejada: ");
+    setbuf (stdin, NULL);
     scanf("%f", &n1);
     printf("\n\nDigite o segundo numero da operacao desejada: ");
+    setbuf (stdin, NULL);
     scanf("%f", &n2);
     printf("\n\n\nCalculando seu resultado...");
     if (op == '+') {

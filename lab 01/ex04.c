@@ -8,10 +8,13 @@ int main () {
     printf("######## Calculadora de media academica ########");
     float n1, n2, n3, media1, notaf;
     printf("\n\nDigite a primeira nota: ");
+    setbuf (stdin, NULL);
     scanf("%f", &n1);
     printf("Agora, digite a segunda nota: ");
+    setbuf (stdin, NULL);
     scanf("%f", &n2);
     printf("Por fim, digite a terceira nota: ");
+    setbuf (stdin, NULL);
     scanf("%f", &n3);
     media1 = media(n1, n2, n3);
     printf("\n\nCalculando sua media...");

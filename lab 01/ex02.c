@@ -8,8 +8,10 @@ int main () {
     int nasc, atual, anos;
     char aniv[4];
     printf("\n\nDigite seu ano de nascimento: ");
+    setbuf (stdin, NULL);
     scanf("%d", &nasc);
     printf("\n\nAgora, digite o ano atual: ");
+    setbuf (stdin, NULL);
     scanf("%d", &atual);
     printf("\n\nJa fez aniversario? Digite sim ou nao: ");
     setbuf (stdin, NULL);

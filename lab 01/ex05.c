@@ -1,12 +1,14 @@
 #include <stdio.h>
 int main () {
-    printf("######## Bem vindo! ########");
+    printf("\n\n######## Bem vindo! ########");
     printf("\n\nDigite a quantidade de numeros que ira informar: ");
     int x, t = 0, r1 = 0, r2 = 0;
+    setbuf (stdin, NULL);
     scanf("%d", &x);
     int v[x];
     printf("\n\nAssim que voce digitar 10, o loop para digitacao de numeros ira parar!");
     for (int i = 0; i < x; i++) {
+        setbuf (stdin, NULL);
         printf("\n\nDigite o %d numero: ", i + 1);
         scanf("%d", &v[i]);
          if (v[i] == 10) {

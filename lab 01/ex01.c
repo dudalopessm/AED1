@@ -4,6 +4,7 @@ int main () {
     printf("\n\n######## Calculadora de fatorial ########");
     printf("\n\nEntre com o valor: ");
     int n;
+    setbuf (stdin, NULL);
     scanf("%d", &n);
     int i, acc;
     acc = 1;
