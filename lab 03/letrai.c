@@ -37,6 +37,7 @@ int main () {
     }
     manipula(vec, n, &media, &maior);
     printf("\n\nA media corresponde a: %.2f e o maior valor corresponde a: %d.", media, maior);
+    free(vec);
     printf("\n\n######## Obrigada por usar! ########");
     return 0;
 }
